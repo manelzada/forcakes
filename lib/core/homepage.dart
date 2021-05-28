@@ -15,11 +15,13 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Color(0xffB39CD0),
       ),
       drawer: Drawer(),
-      body: Column(
-        children: [
-          Container(height: 30),
-          Dashboard(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(height: 40),
+            Dashboard(),
+          ],
+        ),
       ),
       backgroundColor: Color(0xffFBEAFF),
     );

@@ -1,18 +1,7 @@
-class ImgList {
-  final int position;
-  final String nome;
-  final String descricao;
-  final String iconImage;
+import 'package:flutter/material.dart';
 
-  ImgList(
-    this.position,
-    this.nome,
-    this.iconImage,
-    this.descricao,
-  );
-}
-
-List<ImgList> imgs = [
-  ImgList(1, 'Bolo de Banana', 'assets/cakelogo1.png',
-      'Receita simples, porém deliciosa')
+final imgList = [
+  Image.asset("assets/cakelogo1.png"),
+  Image.asset("assets/cakelogo2.png"),
+  Image.asset("assets/cakelogo3.png"),
 ];
