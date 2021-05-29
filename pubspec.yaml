@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.0.0-nullsafety.0
+  google_fonts: ^2.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -61,10 +62,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  #fonts:
+  #  - family: RobotoMono
+  #    fonts:
+  #      - asset: assets/RobotoMono-Bold.ttf
+  #      - weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
