@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forcakes/core/cake_screen/cake_screen.dart';
 import 'package:forcakes/core/catalogo/catalogo.dart';
 import 'package:forcakes/core/catalogo/item_card.dart';
 import 'package:forcakes/core/slide/slider.dart';
@@ -29,12 +30,14 @@ class _HomePageState extends State<HomePage> {
           SizedBox(height: 30),
           Container(
             margin: EdgeInsetsDirectional.only(start: 10),
-            child: Text("Mais pesquisados...",
-                style: GoogleFonts.robotoMono(
-                    textStyle: TextStyle(
-                        fontSize: 20,
-                        color: Color(0xffB39CD0),
-                        fontWeight: FontWeight.bold))),
+            child: Text(
+              "Mais pesquisados",
+              style: GoogleFonts.robotoMono(
+                  textStyle: TextStyle(
+                      fontSize: 20,
+                      color: Color(0xffB39CD0),
+                      fontWeight: FontWeight.bold)),
+            ),
           ),
           SizedBox(height: 30),
           Expanded(
@@ -50,6 +53,12 @@ class _HomePageState extends State<HomePage> {
                 ),
                 itemBuilder: (context, index) => ItemCard(
                   catalogo: catalogo[index],
+                  press: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CakeScreen(
+                                catalogo: catalogo[index],
+                              ))),
                 ),
               ),
             ),

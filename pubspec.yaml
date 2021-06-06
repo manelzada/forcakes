@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.0.0-nullsafety.0
   google_fonts: ^2.0.0
+  flutter_svg: ^0.12.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -50,6 +51,7 @@ flutter:
     - assets/cakelogo1.png
     - assets/cakelogo2.png
     - assets/cakelogo3.png
+    - assets/left-arrow.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
