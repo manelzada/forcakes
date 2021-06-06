@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:forcakes/core/catalogo.dart';
-import 'package:forcakes/core/item_card.dart';
+import 'package:forcakes/core/catalogo/catalogo.dart';
+import 'package:forcakes/core/catalogo/item_card.dart';
 import 'package:forcakes/core/slide/slider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -25,6 +26,17 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           Container(height: 50),
           CustomSlide(),
+          SizedBox(height: 30),
+          Container(
+            margin: EdgeInsetsDirectional.only(start: 10),
+            child: Text("Mais pesquisados...",
+                style: GoogleFonts.robotoMono(
+                    textStyle: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xffB39CD0),
+                        fontWeight: FontWeight.bold))),
+          ),
+          SizedBox(height: 30),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -36,7 +48,9 @@ class _HomePageState extends State<HomePage> {
                   mainAxisSpacing: 8,
                   crossAxisSpacing: 8,
                 ),
-                itemBuilder: (context, index) => ItemCard(),
+                itemBuilder: (context, index) => ItemCard(
+                  catalogo: catalogo[index],
+                ),
               ),
             ),
           ),

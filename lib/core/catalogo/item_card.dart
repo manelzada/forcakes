@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:forcakes/core/catalogo/catalogo.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'catalogo.dart';
-
 class ItemCard extends StatelessWidget {
-  const ItemCard({
-    Key? key,
-  }) : super(key: key);
+  final Catalogo catalogo;
+  //ItemCard({})
+  const ItemCard({Key? key, required this.catalogo}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,14 +26,14 @@ class ItemCard extends StatelessWidget {
                 child: SizedBox(
                   height: 200,
                   width: 150,
-                  child: Image.asset(catalogo[0].imagem),
+                  child: Image.asset(catalogo.imagem),
                 ),
               ),
               Positioned.fill(
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    catalogo[0].nome,
+                    catalogo.nome,
                     style: GoogleFonts.robotoMono(
                       textStyle: TextStyle(
                         fontSize: 18,
