@@ -1,16 +1,5 @@
 # forcakes
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Aplicativo criado para estudos  em flutter 😀
+# Rode flutter pub get, para baixar as dependencias
+![Captura de tela de 2021-06-07 16-20-58](https://user-images.githubusercontent.com/45775404/121076345-adda4f80-c7ac-11eb-809f-c6d4f2a6732a.png)
+![Captura de tela de 2021-06-07 16-25-28](https://user-images.githubusercontent.com/45775404/121076645-03166100-c7ad-11eb-8121-0678f54c7a4c.png)
